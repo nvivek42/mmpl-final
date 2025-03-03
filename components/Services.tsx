@@ -51,8 +51,8 @@ const Services = () => {
                 <Image
                   src={service.bgImage}
                   alt={service.title}
-                  layout="fill"
-                  objectFit="cover"
+                  fill={true} 
+                  style={{ objectFit: 'cover' }} 
                   className="transform scale-101"
                 />
                 {/* Animated Gradient Overlay */}
