@@ -16,9 +16,6 @@ import {
   UserGroupIcon
 } from '@heroicons/react/24/solid'
 
-import { Roboto } from 'next/font/google'
-
-const roboto = Roboto({ weight: ['400'], subsets: ['latin'] })
 
 // Define HeroIcon type
 type HeroIconProps = SVGProps<SVGSVGElement> & {
@@ -104,22 +101,22 @@ const Infrastructure: FC = () => {
       ],
       images: [
         {
-          src: "/image/infra/mh furnace.png",
+          src: "/image/infra/mh furnace.avif",
           alt: "M/H Furnace",
           description: "High-capacity Melting & Holding Furnace"
         },
         {
-          src: "/image/infra/Tilting GDC.png",
+          src: "/image/infra/Tilting GDC.avif",
           alt: "Tilting GDC",
           description: "Advanced Tilting Gravity Die Casting Machine"
         },
         {
-          src: "/image/infra/stationary gdc.png",
+          src: "/image/infra/stationary gdc.avif",
           alt: "Stationary GDC",
           description: "Precision Stationary Die Casting Unit"
         },
         {
-          src: "/image/infra/core shooter.png",
+          src: "/image/infra/core shooter.avif",
           alt: "Core Shooter",
           description: "Automated Core Shooting System"
         }
@@ -258,7 +255,7 @@ const Infrastructure: FC = () => {
             whileInView="visible"
             viewport={{ once: true }}
             variants={animations.container}
-            className={`text-3xl font-bold sm:text-3xl lg:text-4xl text-gray-900 tracking-tight ${roboto.className}`}
+            className={`text-3xl font-bold sm:text-3xl lg:text-4xl text-gray-900 tracking-tight font-roboto`}
           >
             Our Infrastructure
 

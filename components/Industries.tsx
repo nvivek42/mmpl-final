@@ -2,9 +2,6 @@
 
 import Image from 'next/image' // Import Next.js Image component
 import { useEffect, useState } from 'react'
-import { Roboto } from 'next/font/google'
-
-const roboto = Roboto({ weight: ['400'], subsets: ['latin'] })
 
 export default function Industries() {
   const [isLoading, setIsLoading] = useState(true)
@@ -14,7 +11,7 @@ export default function Industries() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-20">
 
         <div className="text-center">
-          <div className={`text-3xl font-bold sm:text-3xl lg:text-4xl text-gray-900 tracking-tight ${roboto.className}`}>
+          <div className={`text-3xl font-bold sm:text-3xl lg:text-4xl text-gray-900 tracking-tight font-roboto`}>
             Our Markets
           </div>
         </div>
@@ -66,49 +63,49 @@ const industries = [
   {
     title: 'Agriculture',
     description: 'High-performance components for aviation and space exploration.',
-    image: '/image/industries/agri.jpg',
+    image: '/image/industries/agri.avif',
     priority: true,
-    blurDataURL: '/image/industries/agri.jpg',
+    blurDataURL: '/image/industries/agri.avif',
   },
   {
     title: 'Automotive',
     description: 'Precision parts for automotive manufacturing and assembly.',
-    image: '/image/industries/automotive.jpg',
+    image: '/image/industries/automotive.avif',
     priority: true,
-    blurDataURL: '/image/industries/automotive.jpg',
+    blurDataURL: '/image/industries/automotive.avif',
   },
   {
     title: 'Infrastructure',
     description: 'Durable components for power generation and distribution.',
-    image: '/image/industries/infra.jpg',
+    image: '/image/industries/infra.avif',
     priority: true,
-    blurDataURL: '/image/industries/infra.jpg',
+    blurDataURL: '/image/industries/infra.avif',
   },
   {
     title: 'E-Mobility',
     description: 'Precision components for medical devices and equipment.',
-    image: '/image/industries/e-mobility.jpg',
+    image: '/image/industries/e-mobility.avif',
     priority: true,
-    blurDataURL: '/image/industries/e-mobility.jpg',
+    blurDataURL: '/image/industries/e-mobility.avif',
   },
   {
     title: 'Defense',
     description: 'Critical components for defense and military applications.',
-    image: '/image/industries/defense.jpg',
+    image: '/image/industries/defense.avif',
     priority: true,
-    blurDataURL: '/image/industries/defense.jpg',
+    blurDataURL: '/image/industries/defense.avif',
   },
   {
     title: 'Energy',
     description: 'Robust solutions for industrial machinery and equipment.',
-    image: '/image/industries/energy.jpg',
+    image: '/image/industries/energy.avif',
     priority: true,
-    blurDataURL: '/image/industries/energy.jpg',
+    blurDataURL: '/image/industries/energy.avif',
   },
   {
     title: 'Construction',
     description: 'Precision components for medical devices and equipment.',
-    image: '/image/industries/construction.jpg',
+    image: '/image/industries/construction.avif',
     priority: true, // Load first
     blurDataURL: 'data:image/jpeg;base64,/9j...' // Add base64 blur image
 
@@ -116,14 +113,14 @@ const industries = [
   {
     title: 'Oil & Gas',
     description: 'Critical components for defense and military applications.',
-    image: '/image/industries/oil.jpg',
+    image: '/image/industries/oil.avif',
     priority: true, // Load first
     blurDataURL: 'data:image/jpeg;base64,/9j...' // Add base64 blur image
   },
   {
     title: 'Communication',
     description: 'Robust solutions for industrial machinery and equipment.',
-    image: '/image/industries/communication.jpg',
+    image: '/image/industries/communication.avif',
     priority: true, // Load first
     blurDataURL: 'data:image/jpeg;base64,/9j...' // Add base64 blur image
   }

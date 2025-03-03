@@ -2,16 +2,10 @@
 
 import Link from 'next/link';
 import { useState } from 'react';
-import { Chakra_Petch } from 'next/font/google';
 import { NAV_LINKS, SITE_TITLE } from '@/config/site';
 import './Header.css';
-import Logo from './Logo'; // Import the Logo component
+import Logo from './Logo'; 
 
-
-const chakraPetch = Chakra_Petch({
-  weight: ['400', '700'],
-  subsets: ['latin']
-});
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -23,24 +17,12 @@ const Header = () => {
   return (
     <nav className="fixed w-full bg-white/90 backdrop-blur-sm top-0 z-50 shadow-md px-4 sm:px-6 md:px-8 lg:px-20 py-3">
       <div className="max-w-7xl mx-auto relative flex items-center justify-between">
-        {/* Logo */}
-        {/* <Link href="/" className="flex items-center space-x-2 sm:space-x-4">
-          <Image 
-            src="/image/logo1.jpg" 
-            alt="Metalmach Logo" 
-            width={32} 
-            height={32} 
-            className="sm:w-[40px] sm:h-[40px] transition-transform duration-300 hover:rotate-6"
-          />
-          <span className={`site-title text-lg sm:text-xl md:text-2xl font-bold ${chakraPetch.className} shiny-text truncate`}>
-            {SITE_TITLE}
-          </span>
-        </Link> */}
+    
         <Link href="/" className="flex items-center space-x-2 sm:space-x-4">
           <div className="">
             <Logo />
           </div>
-          <span className={`site-title text-lg sm:text-lg md:text-2xl font-bold ${chakraPetch.className} shiny-text truncate`}>
+          <span className={`site-title text-lg sm:text-lg md:text-2xl font-bold font-chakra-petch shiny-text truncate`}>
             {SITE_TITLE}
           </span>
         </Link>
