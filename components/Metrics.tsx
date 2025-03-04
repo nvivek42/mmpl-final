@@ -68,21 +68,15 @@ interface CapacityItem {
 // Update the capacity data to use SVG paths
 const capacityData: CapacityItem[] = [
   { 
-    label: "Foundry Utilization",
+    label: "Quality & Reliability",
     percentage: 85,
     iconPath: "/svg/efficiency.png",  // Add your SVG here
-    description: "Maximum utilization of foundry equipment and resources",
+    // description: "Maximum utilization of foundry equipment and resources",
+    description: "Zero Porosity. Zero Defects. Guaranteed",
     trend: "+5% from last quarter",
     color: "from-blue-500 to-blue-600"
   },
-  { 
-    label: "Quality Compliance",
-    percentage: 99,
-    iconPath: "/svg/QC.png",  // Add your SVG here
-    description: "Adherence to international quality standards",
-    trend: "Consistently above 98%",
-    color: "from-green-500 to-green-600"
-  },
+  
   { 
     label: "Production Efficiency",
     percentage: 90,
@@ -95,10 +89,19 @@ const capacityData: CapacityItem[] = [
     label: "On-time Delivery",
     percentage: 95,
     iconPath: "/svg/delivery.png",  // Add your SVG here
-    description: "Reliable and punctual delivery performance",
+    // description: "Reliable and punctual delivery performance",
+    description: "No delays, no excuses – on-time delivery, every time",
     trend: "Industry-leading rate",
     color: "from-orange-500 to-orange-600"
-  }
+  },
+  { 
+    label: "Quality Compliance",
+    percentage: 99,
+    iconPath: "/svg/QC.png",  // Add your SVG here
+    description: "Adherence to international quality standards",
+    trend: "Consistently above 98%",
+    color: "from-green-500 to-green-600"
+  },
 ];
 
 // interface ProgressBarProps {

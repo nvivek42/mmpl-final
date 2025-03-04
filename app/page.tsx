@@ -7,7 +7,7 @@ const Features = lazy(() => import('../components/Features'));
 const Infra = lazy(() => import('../components/Infra'));
 const CTA = lazy(() => import('../components/CTA'));
 const Metrics = lazy(() => import('../components/Metrics'));
-const About = lazy(() => import('@/components/About'));
+const AboutUs = lazy(() => import('@/components/AboutUs'));
 
 export default function Home() {
   return (
@@ -16,10 +16,14 @@ export default function Home() {
         <Hero />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <About />
+        <div id="AboutUs">
+          <AboutUs />    
+        </div>
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <Services />
+        <div id="services">
+          <Services />
+        </div>
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
         <Industries />
@@ -34,7 +38,9 @@ export default function Home() {
         <Features />
       </Suspense>
       <Suspense fallback={<div>Loading...</div>}>
-        <CTA />
+        <div id="contact">
+          <CTA />
+        </div>
       </Suspense>
     </main>
   );

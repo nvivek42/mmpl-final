@@ -63,7 +63,7 @@ const Features: FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className={`text-3xl font-bold sm:text-3xl lg:text-4xl text-gray-900 tracking-tight font-roboto`}
+            className={`text-2xl sm:text-3xl lg:text-4xl text-black font-bold tracking-tight font-roboto`}
           >
             Why Choose MMPL?<br/>
             <p className="text-xl text-gray-600 max-w-3xl py-4 mx-auto">

@@ -36,17 +36,18 @@ const Hero = () => {
 
           <p className="text-xl md:text-2xl mb-8 font-light tracking-wide text-white smooth-fade-in">
             <br />
-            Transforming Complex Manufacturing Challenges into Innovative Solutions
+            {/* Transforming Complex Manufacturing Challenges into Innovative Solutions */}
+            Stop Losing Time & Money on Faulty Castings – Fix It in One Call
           </p>
           <div className="space-x-4 smooth-fade-in-buttons">
             <Link
-              href="/Services"
-              className="hero-cta inline-block bg-[#CD1C18] text-white px-8 py-3 rounded-full text-lg transition-all stagger-button-1"
+              href="/#services"
+              className="hero-cta inline-block bg-[#CD1C18] text-white px-8 py-2.5 rounded-full text-lg transition-all stagger-button-1"
             >
               Explore Services
             </Link>
             <Link
-              href="/CTA"
+              href="/#contact"
               className="hero-cta inline-block border-2 border-white text-white px-8 py-2 rounded-full text-lg transition-all stagger-button-2"
             >
               Contact Us

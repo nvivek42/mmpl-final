@@ -6,10 +6,11 @@ import { Roboto, Inter, Chakra_Petch } from 'next/font/google'
 
 const roboto = Roboto({
   weight: ['300'],
-  subsets: ['latin'],
+  subsets: ['latin-ext'],
   variable: '--font-roboto',
   display: 'swap',
 })
+
 
 const inter = Inter({
   subsets: ['latin'],

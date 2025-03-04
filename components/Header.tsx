@@ -71,7 +71,7 @@ const Header = () => {
               <li key={link.href} className="text-center lg:text-left">
                 <Link
                   href={link.href}
-                  className="nav-link block py-2 lg:py-0 hover:bg-gray-100 lg:hover:bg-transparent"
+                  className="nav-link block py-2 lg:py-0 hover:bg-gray-300 lg:hover:bg-transparent"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {link.label}

@@ -99,16 +99,7 @@
   }
 }
 
-/* Optional: Add focus styles for better accessibility */
-.nav-link:focus {
-  outline: 2px solid #FF4D4D;
-  outline-offset: 2px;
-}
 
-/* Optional: Add active state styles */
-.nav-link:active {
-  transform: scale(0.98);
-}
 
 /* Optional: Reduce motion if user prefers */
 @media (prefers-reduced-motion: reduce) {
@@ -350,19 +341,3 @@
 .logo-chevron:after {
   transition: background-color 0.3s ease-out;
 }
-
-/* Optional: Add animation reset on hover */
-/* .logo-main:hover .animate-border,
-.logo-main:hover .animate-border::before,
-.logo-main:hover .logo-tall-rectangle,
-.logo-main:hover .animate-chevron-1,
-.logo-main:hover .animate-chevron-2,
-.logo-main:hover .animate-chevron-3,
-.logo-main:hover .animate-text {
-  animation: none;
-  opacity: 1;
-  transform: none;
-  height: auto;
-  color: inherit;
-  border-color: inherit;
-} */

@@ -8,21 +8,15 @@ export const NAV_LINKS = [
     label: 'Home' 
   },
   { 
-    href: '/Services', 
-    label: 'Services',
-    subLinks: [
-      { href: '/services/casting', label: 'Metal Casting' },
-      { href: '/services/machining', label: 'CNC Machining' },
-      { href: '/services/prototyping', label: 'Prototyping' }
-    ]
+    href: '/#services', 
+    label: 'Services'
   },
   { 
-    href: '/about', 
+    href: '/#AboutUs', 
     label: 'About Us' 
   },
-  
   { 
-    href: '/contact', 
+    href: '/#contact', 
     label: 'Contact' 
   }
 ];
